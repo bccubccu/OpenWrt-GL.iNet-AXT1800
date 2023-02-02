@@ -29,9 +29,9 @@
     //  name: 'minicom',
     //  desc: 'minicom',
     //},
-  {
-    name: 'procps-ng',
-    desc: 'procps-ng',
+  // {
+    // name: 'procps-ng',
+    // desc: 'procps-ng',
    // },
    // {
     //  name: 'procps-ng-ps',
