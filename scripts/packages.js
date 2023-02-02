@@ -279,4 +279,8 @@
      name: 'luci-app-appfilter',
      desc: '应用过滤'
    },
+{
+     name: 'luci-app-vlmcsd',
+      desc: 'KMS服务器',
+    },
  ];
