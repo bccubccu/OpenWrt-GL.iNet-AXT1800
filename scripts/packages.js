@@ -267,10 +267,6 @@
       name: 'vsftpd',
      desc: 'Vsftpd',
     },
-    {
-     name: 'luci-app-istore',
-     desc: 'Istore',
-    },
  {
      name: 'luci-app-serverchan',
      desc: '微信/Telegram推送',
@@ -283,4 +279,21 @@
      name: 'luci-app-vlmcsd',
       desc: 'KMS服务器',
     },
+   {
+     name: 'luci-app-store',
+   desc: '应用商店',
+  },
+  
+  {
+    name: 'luci-app-smartdns',
+    desc: 'smartdns DNS防污染',
+  },
+  {
+    name: 'luci-app-xlnetacc',
+    desc: '迅雷快鸟',
+  },
+  {
+    name: 'luci-app-cpufreq',
+    desc: 'CPU 性能优化调节',
+  },
  ];
