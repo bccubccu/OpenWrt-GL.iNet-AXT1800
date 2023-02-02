@@ -56,3 +56,4 @@ packages:
   - luci-app-istore
   - luci-app-serverchan
   - luci-app-appfilter
+  - luci-app-vlmcsd
