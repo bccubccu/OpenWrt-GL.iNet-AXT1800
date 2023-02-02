@@ -70,7 +70,7 @@ packages:
   - luci-app-turboacc
   #- luci-app-uugamebooster
   -openssh-sftp-server
-  #-luci-compat
+  -luci-compat
   -luci-app-uhttpd
   -vsftpd
   -luci-app-istore
