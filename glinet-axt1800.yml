@@ -30,19 +30,19 @@ packages:
   - wireless-regdb
   - wget-ssl
   - kmod-wireguard-backport
-  - kmod-usb-ledtrig-usbport
-  - kmod-usb-net-cdc-mbim
-  - kmod-usb-net-sierrawireless
-  - usbutils
-  - minicom
-  - procps-ng
-  - procps-ng-ps
-  - grep
-  - lsblk
-  - fdisk
-  - cfdisk
-  - luci-app-netdata
-  - luci-app-ttyd
+  # - kmod-usb-ledtrig-usbport
+  # - kmod-usb-net-cdc-mbim
+  # - kmod-usb-net-sierrawireless
+  # - usbutils
+ #  - minicom
+ #  - procps-ng
+  # - procps-ng-ps
+  # - grep
+  # - lsblk
+  # - fdisk
+  # - cfdisk
+  # - luci-app-netdata
+  # - luci-app-ttyd
   - luci-app-nlbwmon
   - luci-app-wrtbwmon
   - luci-app-diskman
