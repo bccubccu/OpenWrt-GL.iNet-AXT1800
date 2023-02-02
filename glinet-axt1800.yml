@@ -69,8 +69,8 @@ packages:
   #- luci-app-aliyundrive-webdav
   - luci-app-turboacc
   #- luci-app-uugamebooster
-  -openssh-sftp-server
-  -luci-compat
-  -luci-app-uhttpd
-  -vsftpd
-  -luci-app-istore
+  - openssh-sftp-server
+  - luci-compat
+  - luci-app-uhttpd
+  - vsftpd
+  - luci-app-istore
