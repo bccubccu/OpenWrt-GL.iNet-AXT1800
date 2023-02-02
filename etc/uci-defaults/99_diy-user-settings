@@ -121,8 +121,8 @@ uci add_list uhttpd.main.listen_http=0.0.0.0:8880
 uci add_list uhttpd.main.listen_https=[::]:443
 uci add_list uhttpd.main.listen_https=0.0.0.0:443
 uci set uhttpd.main.rfc1918_filter=0
-uci set uhttpd.main.cert=/etc/ssl/certs/certificate.cer
-uci set uhttpd.main.key=/etc/ssl/certs/private.key
+#uci set uhttpd.main.cert=/etc/ssl/certs/certificate.cer
+#uci set uhttpd.main.key=/etc/ssl/certs/private.key
 uci set uhttpd.main.redirect_https=1
 uci commit uhttpd
 
