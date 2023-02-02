@@ -119,14 +119,14 @@
     name: 'luci-app-autoreboot',
     desc: '支持计划重启',
   },
-  {
-    name: 'luci-app-commands',
-    desc: '自定义命令',
-  },
-  {
-    name: 'luci-app-sms-tool',
-    desc: '4G/5G模组短信工具',
-  },
+   // {
+    //  name: 'luci-app-commands',
+   //   desc: '自定义命令',
+   // },
+  //  {
+   //   name: 'luci-app-sms-tool',
+   //   desc: '4G/5G模组短信工具',
+   // },
   // {
   // name: 'luci-app-mwan3helper',
   // desc: '负载均衡',
@@ -207,10 +207,10 @@
     name: 'luci-app-zerotier',
     desc: 'ZeroTier内网穿透',
   },
-  {
-    name: 'luci-app-openvpn',
-    desc: 'OpenVPN客户端',
-  },
+   // {
+   //   name: 'luci-app-openvpn',
+   //   desc: 'OpenVPN客户端',
+   // },
   // {
   //   name: 'luci-app-docker',
   //   desc: 'Docker容器',
@@ -219,14 +219,14 @@
   //   name: 'luci-app-adbyby-plus',
   //   desc: '广告屏蔽大师Plus +',
   // },
-  // {
-  //   name: 'luci-app-adguardhome',
-  //   desc: 'AdGuard home广告过滤',
-  // },
   {
-    name: 'luci-app-unblockmusic',
-    desc: '解锁网易云灰色歌曲3合1新版本',
-  },
+     name: 'luci-app-adguardhome',
+     desc: 'AdGuard home广告过滤',
+   },
+    //{
+    //  name: 'luci-app-unblockmusic',
+     // desc: '解锁网易云灰色歌曲3合1新版本',
+   // },
   // {
   //   name: 'luci-app-unblockneteasemusic-go',
   //   desc: '解锁网易云Golang版本',
@@ -239,16 +239,16 @@
     name: 'luci-app-pushbot',
     desc: '全能推送（钉钉推送，企业微信推送，Bark，PushPlus推送）',
   },
-  {
-    name: 'luci-app-aliyundrive-webdav',
-    desc: '阿里云盘WebDAV服务',
-  },
+  //  {
+   //   name: 'luci-app-aliyundrive-webdav',
+    //  desc: '阿里云盘WebDAV服务',
+   // },
   {
     name: 'luci-app-turboacc',
     desc: 'Turbo ACC 网络加速(支持Fast Path或者硬件NAT)',
   },
-  {
-    name: 'luci-app-uugamebooster',
-    desc: 'UU网游加速器',
-  },
+   // {
+    //  name: 'luci-app-uugamebooster',
+    //  desc: 'UU网游加速器',
+   // },
 ];
