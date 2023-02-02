@@ -43,7 +43,7 @@ packages:
   # - cfdisk
   # - luci-app-netdata
   # - luci-app-ttyd
-  - luci-app-nlbwmon
+  #- luci-app-nlbwmon
   - luci-app-wrtbwmon
   - luci-app-diskman
   - luci-app-watchcat
@@ -69,3 +69,8 @@ packages:
   - luci-app-aliyundrive-webdav
   - luci-app-turboacc
   - luci-app-uugamebooster
+  -openssh-sftp-server
+  -luci-compat
+  -luci-app-uhttpd
+  -vsftpd
+  -luci-app-istore
