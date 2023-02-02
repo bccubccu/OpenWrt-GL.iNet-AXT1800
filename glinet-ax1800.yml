@@ -54,3 +54,4 @@ packages:
   - luci-app-uhttpd
   - vsftpd
   - luci-app-istore
+  - luci-app-serverchan
