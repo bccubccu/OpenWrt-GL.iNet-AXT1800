@@ -29,7 +29,7 @@ uci set wireless.radio0.type='mac80211'
 uci set wireless.radio0.path='platform/soc/c000000.wifi'
 uci set wireless.radio0.band='5g'
 uci set wireless.radio0.htmode='HE80'
-uci set wireless.radio0.country='US'
+uci set wireless.radio0.country='CN'
 uci set wireless.radio0.disabled='0'
 uci set wireless.radio0.channel='auto'
 uci set wireless.radio0.legacy_rates='0'
@@ -43,15 +43,15 @@ uci set wireless.default_radio0.wds='1'
 uci set wireless.default_radio0.isolate='0'
 uci set wireless.default_radio0.hidden='0'
 uci set wireless.default_radio0.disabled='0'
-uci set wireless.default_radio0.ssid='GL-AXT1800-5GHz'
-uci set wireless.default_radio0.encryption='none'
-#uci set wireless.default_radio0.key='12345678'
+uci set wireless.default_radio0.ssid='Lt2'
+uci set wireless.default_radio0.encryption='psk2'
+uci set wireless.default_radio0.key='15638008067'
 uci commit wireless
 uci set wireless.radio1=wifi-device
 uci set wireless.radio1.type='mac80211'
 uci set wireless.radio1.path='platform/soc/c000000.wifi+1'
 uci set wireless.radio1.band='2g'
-uci set wireless.radio1.country='US'
+uci set wireless.radio1.country='CN'
 uci set wireless.radio1.disabled='0'
 uci set wireless.radio1.channel='auto'
 uci set wireless.radio1.htmode='HE40'
@@ -66,9 +66,9 @@ uci set wireless.default_radio1.wds='1'
 uci set wireless.default_radio1.isolate='0'
 uci set wireless.default_radio1.hidden='0'
 uci set wireless.default_radio1.disabled='0'
-uci set wireless.default_radio1.ssid='GL-AXT1800-2.4GHz'
-uci set wireless.default_radio1.encryption='none'
-#uci set wireless.default_radio1.key='12345678'
+uci set wireless.default_radio1.ssid='lt'
+uci set wireless.default_radio1.encryption='psk2'
+uci set wireless.default_radio1.key='15638008067'
 uci commit wireless
 uci set wireless.guest5g=wifi-iface
 uci set wireless.guest5g.device='radio0'
@@ -78,7 +78,7 @@ uci set wireless.guest5g.guest='1'
 uci set wireless.guest5g.disabled='1'
 uci set wireless.guest5g.wds='1'
 uci set wireless.guest5g.isolate='1'
-uci set wireless.guest5g.ssid='GL-AXT1800-5GHz-Guest'
+uci set wireless.guest5g.ssid='GL-AXT1800-5.0G-Guest'
 uci set wireless.guest5g.encryption='none'
 #uci set wireless.guest5g.key='12345678'
 uci commit wireless
@@ -90,7 +90,7 @@ uci set wireless.guest2g.guest='1'
 uci set wireless.guest2g.disabled='1'
 uci set wireless.guest2g.wds='1'
 uci set wireless.guest2g.isolate='1'
-uci set wireless.guest2g.ssid='GL-AXT1800-2.4GHz-Guest'
+uci set wireless.guest2g.ssid='GL-AXT1800-2.4G-Guest'
 uci set wireless.guest2g.encryption='none'
 #uci set wireless.guest2g.key='12345678'
 uci commit wireless
@@ -105,5 +105,25 @@ echo 'iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53'
 
 # 解决定时重启死循环问题
 echo '#30 4 * * * sleep 70 && touch /etc/banner && reboot' >> /etc/crontabs/root
+#比如配置lan口和wan口
+uci set network.lan.ipaddr="192.168.8.1"
+uci set network.wan.proto="pppoe"
+uci set network.wan.username="039406481506"
+uci set network.wan.password="123456"
+uci commit network
+
+
+#比如配置 uhttpd
+uci del uhttpd.main.listen_http
+uci del uhttpd.main.listen_https
+uci add_list uhttpd.main.listen_http=[::]:8880
+uci add_list uhttpd.main.listen_http=0.0.0.0:8880
+uci add_list uhttpd.main.listen_https=[::]:443
+uci add_list uhttpd.main.listen_https=0.0.0.0:443
+uci set uhttpd.main.rfc1918_filter=0
+uci set uhttpd.main.cert=/etc/ssl/certs/certificate.cer
+uci set uhttpd.main.key=/etc/ssl/certs/private.key
+uci set uhttpd.main.redirect_https=1
+uci commit uhttpd
 
 exit 0
