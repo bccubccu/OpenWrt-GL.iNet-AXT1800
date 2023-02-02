@@ -22,7 +22,7 @@ feeds:
   - name: NueXini_Packages
     uri: https://github.com/NueXini/NueXini_Packages.git
     branch: main
-    revision: 2966e1a7e71449f1dc364cbdc7594385ab57997f
+    revision: 5092cb8c09ad77035ba01437a0c68aa5df8001b3
 include: []
 packages:
   - wireless-regdb
@@ -55,3 +55,4 @@ packages:
   - vsftpd
   - luci-app-istore
   - luci-app-serverchan
+  - luci-app-appfilter
