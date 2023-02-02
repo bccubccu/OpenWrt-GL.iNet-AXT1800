@@ -251,4 +251,24 @@
     //  name: 'luci-app-uugamebooster',
     //  desc: 'UU网游加速器',
    // },
-];
+{
+    name: 'openssh-sftp-server',
+    desc: 'SSH_SFTP链接',
+  },
+  {
+    name: 'luci-compat',
+    desc: 'Compat依赖',
+  },
+  {
+      name: 'luci-app-uhttpd',
+     desc: 'Uhttpd',
+    },
+  {
+      name: 'vsftpd',
+     desc: 'Vsftpd',
+    },
+    {
+     name: 'luci-app-istore',
+     desc: 'Istore',
+    },
+ ];
