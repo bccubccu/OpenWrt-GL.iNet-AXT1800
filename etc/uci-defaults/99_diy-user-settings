@@ -100,8 +100,8 @@ ln -sf /sbin/ip /usr/bin/ip
 
 #iptables设置
 sed -i '/REDIRECT --to-ports 53/d' /etc/firewall.user
-echo 'iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53' >> /etc/firewall.user
-echo 'iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53' >> /etc/firewall.user
+#echo 'iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53' >> /etc/firewall.user
+#echo 'iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53' >> /etc/firewall.user
 
 # 解决定时重启死循环问题
 echo '#30 4 * * * sleep 70 && touch /etc/banner && reboot' >> /etc/crontabs/root
