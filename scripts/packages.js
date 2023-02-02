@@ -271,4 +271,8 @@
      name: 'luci-app-istore',
      desc: 'Istore',
     },
+ {
+     name: 'luci-app-serverchan',
+     desc: '微信/Telegram推送',
+    },
  ];
