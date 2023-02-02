@@ -18,29 +18,16 @@ feeds:
   - name: immortalwrt_luci
     uri: https://github.com/immortalwrt/luci.git
     branch: openwrt-21.02
-    revision: a78c42eaa3ec3a4bcf09903fd484115ebd84fd0a
+    revision: f3bf7fa6b5052d8871131ef2803f5ebb8ea484d2
   - name: NueXini_Packages
     uri: https://github.com/NueXini/NueXini_Packages.git
     branch: main
-    revision: 0c4462c3b973abd849e6ef67e01cb43901ca3db3
+    revision: b79468149e81c9baa5f9cc11ebf0a997ab4befec
 include: []
 packages:
   - wireless-regdb
   - wget-ssl
   - kmod-wireguard-backport
-  - kmod-usb-ledtrig-usbport
-  - kmod-usb-net-cdc-mbim
-  - kmod-usb-net-sierrawireless
-  - usbutils
-  - minicom
-  - procps-ng
-  - procps-ng-ps
-  - grep
-  - lsblk
-  - fdisk
-  - cfdisk
-  - luci-app-netdata
-  - luci-app-ttyd
   - luci-app-nlbwmon
   - luci-app-wrtbwmon
   - luci-app-diskman
@@ -54,16 +41,16 @@ packages:
   - luci-app-ddns
   - luci-app-wol
   - luci-app-autoreboot
-  - luci-app-commands
-  - luci-app-sms-tool
   - luci-app-fileassistant
   - luci-theme-argon
   - luci-app-argon-config
   - luci-app-openclash
   - luci-app-zerotier
-  - luci-app-openvpn
-  - luci-app-unblockmusic
+  - luci-app-adguardhome
   - luci-app-pushbot
-  - luci-app-aliyundrive-webdav
   - luci-app-turboacc
-  - luci-app-uugamebooster
+  - openssh-sftp-server
+  - luci-compat
+  - luci-app-uhttpd
+  - vsftpd
+  - luci-app-istore
