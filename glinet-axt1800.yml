@@ -55,7 +55,10 @@ packages:
   - luci-compat
   - luci-app-uhttpd
   - vsftpd
-  - luci-app-istore
   - luci-app-serverchan
   - luci-app-appfilter
   - luci-app-vlmcsd
+  - luci-app-store
+  - luci-app-smartdns
+  - luci-app-xlnetacc
+  - luci-app-cpufreq
