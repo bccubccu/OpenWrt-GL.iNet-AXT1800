@@ -56,19 +56,19 @@ packages:
   - luci-app-ddns
   - luci-app-wol
   - luci-app-autoreboot
-  - luci-app-commands
-  - luci-app-sms-tool
+  #- luci-app-commands
+  #- luci-app-sms-tool
   - luci-app-fileassistant
   - luci-theme-argon
   - luci-app-argon-config
   - luci-app-openclash
   - luci-app-zerotier
-  - luci-app-openvpn
-  - luci-app-unblockmusic
+  #- luci-app-openvpn
+  #- luci-app-unblockmusic
   - luci-app-pushbot
-  - luci-app-aliyundrive-webdav
+  #- luci-app-aliyundrive-webdav
   - luci-app-turboacc
-  - luci-app-uugamebooster
+  #- luci-app-uugamebooster
   -openssh-sftp-server
   -luci-compat
   -luci-app-uhttpd
