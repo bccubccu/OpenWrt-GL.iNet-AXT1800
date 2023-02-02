@@ -275,4 +275,8 @@
      name: 'luci-app-serverchan',
      desc: '微信/Telegram推送',
     },
+   {
+     name: 'luci-app-appfilter',
+     desc: '应用过滤'
+   },
  ];
