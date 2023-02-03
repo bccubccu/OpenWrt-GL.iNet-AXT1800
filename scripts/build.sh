@@ -30,6 +30,8 @@ cd wlan-ap/openwrt
 git clone https://github.com/gl-inet/glinet4.x.git -b main $PWD/glinet
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+echo "$(date +"%Y.%m.%d")" >./package/base-files/files/etc/glversion
+echo " Bulid By NiePeiLiang " >./package/base-files/files/etc/version.type
 make defconfig
 
 
