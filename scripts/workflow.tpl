@@ -85,6 +85,7 @@ jobs:
         make defconfig
         cd /workdir/gl-infra-builder/${openwrt_root_dir}/files/etc
         echo "$(date +"%Y.%m.%d")" >./glversion
+        echo " Bulid By NiePeiLiang " >./version.type
 
     - name: run setup.py
       if: env.OFFICIAL == 'false'
