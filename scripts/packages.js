@@ -219,10 +219,10 @@
   //   name: 'luci-app-adbyby-plus',
   //   desc: '广告屏蔽大师Plus +',
   // },
-  {
-     name: 'luci-app-adguardhome',
-     desc: 'AdGuard home广告过滤',
-   },
+  //{
+    // name: 'luci-app-adguardhome',
+    // desc: 'AdGuard home广告过滤',
+   //,
     //{
     //  name: 'luci-app-unblockmusic',
      // desc: '解锁网易云灰色歌曲3合1新版本',
