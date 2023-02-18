@@ -105,7 +105,8 @@ sed -i '/REDIRECT --to-ports 53/d' /etc/firewall.user
 
 # 解决定时重启死循环问题
 echo '#30 4 * * * sleep 70 && touch /etc/banner && reboot' >> /etc/crontabs/root
-#比如配置lan口和wan口
+
+# 比如配置lan口和wan口
 uci set network.lan.ipaddr="192.168.8.1"
 #uci set network.wan.proto="pppoe"
 #uci set network.wan.username="039406481506"
