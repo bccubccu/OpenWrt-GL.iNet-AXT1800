@@ -295,4 +295,9 @@
     name: 'luci-app-cpufreq',
     desc: 'CPU 性能优化调节',
   },
+   {
+    name: 'luci-app-vsftpd',
+    desc: 'Ftp服务器',
+  },
+ 
  ];
