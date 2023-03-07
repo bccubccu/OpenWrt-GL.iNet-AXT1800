@@ -22,7 +22,7 @@ feeds:
   - name: NueXini_Packages
     uri: https://github.com/NueXini/NueXini_Packages.git
     branch: main
-    revision: de34f7035424b8b1f62cf31b503d1d11a817d5b6
+    revision: f39c4ed65e0e5309f4e170b473d29428e15d61c1
 include: []
 packages:
   - kmod-hwmon-pwmfan
@@ -59,3 +59,4 @@ packages:
   - luci-app-vlmcsd
   - luci-app-store
   - luci-app-cpufreq
+  - luci-app-vsftpd
