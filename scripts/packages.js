@@ -303,6 +303,9 @@
     name: 'luci-app-aria2',
     desc: 'Aria2下载器',
   },
-  
-  
+  {
+    name: 'webui-aria2',
+    desc: 'webui-aria2',
+  },
+    
  ];
