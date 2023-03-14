@@ -64,3 +64,4 @@ packages:
   - luci-app-cpufreq
   - luci-app-vsftpd
   - luci-app-aria2
+  - webui-aria2
