@@ -299,5 +299,10 @@
     name: 'luci-app-vsftpd',
     desc: 'Ftp服务器',
   },
- 
+   {
+    name: 'luci-app-aria2',
+    desc: 'Aria2下载器',
+  },
+  
+  
  ];
