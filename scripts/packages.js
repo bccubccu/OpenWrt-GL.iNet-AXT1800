@@ -299,13 +299,13 @@
     name: 'luci-app-vsftpd',
     desc: 'Ftp服务器',
   },
-   // #{
-    // name: 'luci-app-aria2',
- //   # desc: 'Aria2下载器',
-  // // ,
-  // {
-   //  name: 'webui-aria2',
-    // desc: 'webui-aria2',
-  // },
+   #{
+   name: 'luci-app-aria2',
+desc: 'Aria2下载器',
+  },
+  {
+   name: 'webui-aria2',
+    desc: 'webui-aria2',
+   },
     
  ];
