@@ -24,7 +24,7 @@ on:
       - '.github/workflows/build-glinet-axt1800.yml'
       - 'glinet-axt1800.yml'
     branches:
-      - main
+      - master
 
   # schedule:
   #   - cron: 0 16 * * *
