@@ -31,7 +31,7 @@ on:
 
 env:
   REPO_URL: https://github.com/gl-inet/gl-infra-builder
-  REPO_BRANCH: maste
+  REPO_BRANCH: master
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_WETRANSFER: true
@@ -77,7 +77,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@github.com"
         python3 setup.py -c configs/config-wlan-ap.yml
-        cd /workdir/gl-infra-builder/wlan-ap/openwrt
+        cd /workdir/gl-infra-builder/patches-wlan-ap/openwrt
         ./scripts/gen_config.py glinet-axt1800 glinet_depends
           git clone https://github.com/gl-inet/glinet4.x.git -b main /workdir/glinet
         ./scripts/feeds update -a
