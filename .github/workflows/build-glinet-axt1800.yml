@@ -24,14 +24,14 @@ on:
       - '.github/workflows/build-glinet-axt1800.yml'
       - 'glinet-axt1800.yml'
     branches:
-      - master
+      - main
 
   # schedule:
   #   - cron: 0 16 * * *
 
 env:
   REPO_URL: https://github.com/gl-inet/gl-infra-builder
-  REPO_BRANCH: master
+  REPO_BRANCH: main
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_WETRANSFER: true
