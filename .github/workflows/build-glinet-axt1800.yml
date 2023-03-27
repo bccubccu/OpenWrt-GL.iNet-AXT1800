@@ -31,7 +31,7 @@ on:
 
 env:
   REPO_URL: https://github.com/gl-inet/gl-infra-builder
-  REPO_BRANCH: main
+  REPO_BRANCH: maste
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_WETRANSFER: true
@@ -94,7 +94,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@github.com"
         python3 setup.py -c configs/config-wlan-ap.yml
-        cd /workdir/gl-infra-builder/wlan-ap/openwrt
+        cd /workdir/gl-infra-builder/patches-wlan-ap/openwrt
         ./scripts/gen_config.py glinet-axt1800 openwrt_common luci
         ./scripts/feeds update -a
         ./scripts/feeds install -a
@@ -111,7 +111,7 @@ jobs:
       id: official-compile
       if: env.OFFICIAL == 'true'
       run: |
-        cd /workdir/gl-infra-builder/wlan-ap/openwrt
+        cd /workdir/gl-infra-builder/patches-wlan-ap/openwrt
         echo -e "$(nproc) thread compile"
         make -j$(expr $(nproc) + 1) GL_PKGDIR=/workdir/glinet/ipq60xx/ V=s
         echo "::set-output name=status::success"
@@ -123,7 +123,7 @@ jobs:
       id: compile
       if: env.OFFICIAL == 'false'
       run: |
-        cd /workdir/gl-infra-builder/wlan-ap/openwrt
+        cd /workdir/gl-infra-builder/patches-wlan-ap/openwrt
         echo -e "$(nproc) thread compile"
         make -j$(expr $(nproc) + 1)  V=s
         echo "::set-output name=status::success"
@@ -146,7 +146,7 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled() && !failure()
       run: |
-        cd /workdir/gl-infra-builder/wlan-ap/openwrt/bin/targets/ipq807x/ipq60xx
+        cd /workdir/gl-infra-builder/patches-wlan-ap/openwrt/bin/targets/ipq807x/ipq60xx
         echo $PWD
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
