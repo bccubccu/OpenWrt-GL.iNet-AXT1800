@@ -24,9 +24,9 @@ cd $PWD/gl-infra-builder
 #setup
 python3 setup.py -c config-wlan-ap-5.4.yml
 
-cd wlan-ap/openwrt
+cd patches-wlan-ap/openwrt
 ./scripts/gen_config.py  $PWD/gl-infra-builder/profiles/glinet_$DEVICE glinet_depends
-cd wlan-ap/openwrt
+cd patches-wlan-ap/openwrt
 scripts/gen_config.py target_wlan_ap-gl-$DEVICE1 glinet_depends
 git clone https://github.com/gl-inet/glinet4.x.git -b main $PWD/glinet
 ./scripts/feeds update -a
