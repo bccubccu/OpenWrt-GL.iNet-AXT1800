@@ -140,7 +140,7 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: /workdir/gl-infra-builder/wlan-ap/openwrt/bin
+        path: /workdir/gl-infra-builder/patches-wlan-ap/openwrt/bin
 
     - name: Organize files
       id: organize
