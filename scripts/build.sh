@@ -31,8 +31,8 @@ scripts/gen_config.py target_wlan_ap-gl-$DEVICE1 glinet_depends
 git clone https://github.com/gl-inet/glinet4.x.git -b main $PWD/glinet
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-cp ~/glinet4.x/pkg_config/gl_pkg_config_axt1800.mk  ~/glinet/ipq60xx/gl_pkg_config.mk
-cp ~/glinet4.x/pkg_config/glinet_depends_axt1800.yml  ./profiles/glinet_depends.yml
+cp ~/glinet/pkg_config/gl_pkg_config_axt1800.mk  ~/glinet/ipq60xx/gl_pkg_config.mk
+cp ~/glinet/pkg_config/glinet_depends_axt1800.yml  ./profiles/glinet_depends.yml
 echo "$(date +"%Y.%m.%d")" >./package/base-files/files/etc/glversion
 echo " Bulid By NiePeiLiang " >./package/base-files/files/etc/version.type
 make defconfig
