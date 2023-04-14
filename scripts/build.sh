@@ -26,8 +26,13 @@ python3 setup.py -c config-wlan-ap-5.4.yml
 
 cd $PWD/gl-infra-builder
 ./scripts/gen_config.py  $PWD/gl-infra-builder/profiles/glinet_$DEVICE glinet_depends
+
 #cd $PWD/gl-infra-builder
 #./scripts/gen_config.py target_wlan_ap-gl-$DEVICE1 glinet_depends
+
+
+
+
 git clone https://github.com/gl-inet/glinet4.x.git -b main $PWD/glinet
 ./scripts/feeds update -a
 ./scripts/feeds install -a
