@@ -78,9 +78,8 @@ jobs:
         git config --global user.email "github-actions[bot]@github.com"
         python3 setup.py -c configs/config-wlan-ap.yml
         cd /workdir/gl-infra-builder/wlan-ap/openwrt
-        ./scripts/gen_config.py glinet_depends
-        #./scripts/gen_config.py glinet-axt1800 glinet_depends
-          git clone https://github.com/gl-inet/glinet4.x.git -b main /workdir/glinet
+        ./scripts/gen_config.py glinet-axt1800 glinet_depends
+         git clone https://github.com/gl-inet/glinet4.x.git -b main /workdir/glinet
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         cp /workdir/glinet/pkg_config/gl_pkg_config_axt1800.mk  /workdir/glinet/ipq60xx/gl_pkg_config.mk
