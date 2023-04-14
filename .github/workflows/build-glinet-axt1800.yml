@@ -69,6 +69,7 @@ jobs:
         ln -sf /workdir/gl-infra-builder $GITHUB_WORKSPACE/gl-infra-builder
         cd $GITHUB_WORKSPACE
         [ -e glinet-axt1800.yml ] && mv glinet-axt1800.yml /workdir/gl-infra-builder/profiles
+        [ -e *axt1800* ] && mv *axt1800* /workdir/gl-infra-builder/profiles
 
     - name: run official setup.py
       if: env.OFFICIAL == 'true'
