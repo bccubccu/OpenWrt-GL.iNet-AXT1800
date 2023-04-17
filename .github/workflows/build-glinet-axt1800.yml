@@ -83,7 +83,7 @@ jobs:
          git clone https://github.com/gl-inet/glinet4.x.git -b main /workdir/glinet
         ./scripts/gen_config.py glinet-axt1800 glinet_depends
         ./scripts/feeds update -a
-        ./glinet/scripts/feeds install -a
+        ./scripts/feeds install -a
         cp /workdir/glinet/pkg_config/gl_pkg_config_axt1800.mk  /workdir/glinet/ipq60xx/gl_pkg_config.mk
         cp /workdir/glinet/pkg_config/glinet_depends_axt1800.yml  /workdir/gl-infra-builder/profiles/glinet_depends.yml
         make defconfig
