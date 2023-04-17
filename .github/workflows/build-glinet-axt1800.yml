@@ -72,7 +72,7 @@ jobs:
         #[ -e *axt1800* ] && mv *axt1800* /workdir/gl-infra-builder/profiles
         git clone https://github.com/gl-inet/gl-infra-builder.git $PWD/gl-infra-builder
         cd $PWD/gl-infra-builder        
-        python3 setup.py -c configs/config-wlan-ap.yml.yml
+        python3 setup.py -c configs/config-wlan-ap.yml
         cd wlan-ap/openwrt
         ./scripts/gen_config.py target_wlan_ap-gl-axt1800 glinet_depends
 
