@@ -57,7 +57,7 @@ packages:
   - openssh-sftp-server
   - luci-compat
   - luci-app-uhttpd
-  - vsftpd
+  - vsftpd-alt
   - luci-app-serverchan
   - luci-app-vlmcsd
   - luci-app-store
