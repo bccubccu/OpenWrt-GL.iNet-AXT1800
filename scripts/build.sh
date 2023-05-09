@@ -19,7 +19,7 @@ esac
 
 #clone source tree
 git clone https://github.com/gl-inet/gl-infra-builder.git $PWD/gl-infra-builder
-cp -r $PWD/*.yml $PWD/gl-infra-builder/profiles
+cp -r $PWD/gl-infra-builder/*.yml $PWD/gl-infra-builder/profiles
 cd $PWD/gl-infra-builder
 #setup
 python3 setup.py -c config-wlan-ap-5.4.yml
